@@ -1,0 +1,72 @@
+.shopify-btn-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    display: flex;
+    font-family: meursault-variable, serif;
+    letter-spacing: 0.1em;
+    font-variation-settings: "wdth" 100, "wght" 900;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+}
+
+
+.btn-shopify {
+  background-color: #5e8e3e;
+  color: #ffffff;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-animated {
+  -webkit-animation: moveInBottom 0.5s ease-out;
+          animation: moveInBottom 0.5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

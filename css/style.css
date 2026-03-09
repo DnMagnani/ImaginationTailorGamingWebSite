@@ -67,25 +67,3 @@ nav a:hover {
     font-weight: 600;
     text-decoration: none;
 }
-
-.shopify-btn-container {
-    display: flex;
-    align-items: center;
-}
-
-.shopify-btn {
-    font-family: meursault-variable, serif;
-    letter-spacing: 0.1em;
-    font-variation-settings: "wdth" 100, "wght" 900;
-    text-transform: capitalize;
-    border: none;
-    border-radius: 3rem;
-    padding: 0.8rem 2rem;
-    color: #ffffff;
-    background-color: #5e8e3e;
-}
-
-.shopify-btn:hover {
-    background-color: #95bf47;
-}
-/*Header End*/
