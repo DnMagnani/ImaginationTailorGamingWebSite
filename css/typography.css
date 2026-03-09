@@ -1,0 +1,45 @@
+/* tittles */
+
+.Meursault {
+    font-family: meursault-variable, serif;
+}
+
+.Meursault.UltraCondensedThin {
+    font-variation-settings: "wdth" 1, "wght" 100;
+}
+
+.Meursault.Black {
+    font-variation-settings: "wdth" 100, "wght" 900;
+}
+
+
+/* main text */
+
+.Poppins {
+    font-family: "poppins", sans-serif;
+}
+
+.PoppinsThin {
+    font-family: poppins, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.PoppinsThinItalic {
+    font-family: poppins, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.PoppinsRegular {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Elementos*/
+
+h1 {
+  font-family: meursault-variable, serif;
+  font-variation-settings: "wdth" 100, "wght" 900;  
+}
