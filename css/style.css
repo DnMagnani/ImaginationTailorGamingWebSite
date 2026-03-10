@@ -1,6 +1,8 @@
 /* tipografia */
 @import url(typography.css);
 
+/* buttons */
+@import url(shopify_btn.css);
 
 body {
     font-family: poppins, sans-serif;
@@ -16,7 +18,6 @@ header {
     width: 100%;
     height: 100px;
     background-color: #FFBB08;
-    padding: 1rem;
     display: flex;
 }
 
@@ -67,3 +68,5 @@ nav a:hover {
     font-weight: 600;
     text-decoration: none;
 }
+
+/*Header End*/
