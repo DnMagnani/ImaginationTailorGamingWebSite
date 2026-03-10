@@ -8,6 +8,7 @@
     display: flex;
     font-family: meursault-variable, serif;
     letter-spacing: 0.1em;
+    font-size: small;
     font-variation-settings: "wdth" 100, "wght" 900;
     text-transform: uppercase;
     border: none;
@@ -17,32 +18,33 @@
 
 
 .btn-shopify {
-  background-color: #5e8e3e;
+  background-color: #95bf47;
   color: #ffffff;
 }
 
-.btn:link,
-.btn:visited {
+.btn-shopify:link,
+.btn-shopify:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 0.8rem 2rem;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
 }
 
-.btn:hover {
+.btn-shopify:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #5e8e3e;
 }
 
-.btn:active {
+.btn-shopify:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-animated {
+.btn-shopify-animated {
   -webkit-animation: moveInBottom 0.5s ease-out;
           animation: moveInBottom 0.5s ease-out;
   -webkit-animation-fill-mode: backwards;

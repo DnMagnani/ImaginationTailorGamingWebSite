@@ -43,3 +43,41 @@ h1 {
   font-family: meursault-variable, serif;
   font-variation-settings: "wdth" 100, "wght" 900;  
 }
+
+h1.heroSection-Text {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+} 
+
+.heroSection-Txtbox h5 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: aliceblue;
+}
+
+p.heroSection-Text {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+span.highlight {
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+h1>span.highlight {
+    background-color: #7d41ce;
+    padding: 0 0.2em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Text Colors */
+
+.white {
+    color: white;
+}

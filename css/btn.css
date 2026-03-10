@@ -1,0 +1,117 @@
+.btn {
+  background-color: #FFBB08;
+  color: #ffffff;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #7d41ce;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-animated {
+  -webkit-animation: moveInBottom 0.5s ease-out;
+          animation: moveInBottom 0.5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+/* Prefixed Icon */
+
+.btn-prefixicon {
+  background-color: #FFBB08;
+  color: #ffffff;
+}
+
+.btn-prefixicon:link,
+.btn-prefixicon:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  padding-left: 3rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn-prefixicon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #7d41ce;
+}
+
+.btn-prefixicon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-prefixicon-animated {
+  -webkit-animation: moveInBottom 0.5s ease-out;
+          animation: moveInBottom 0.5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.hero-btn-area {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.btn-prefixicon {
+  padding-left: 3em;
+}
+
+.prefixicon {
+  position: absolute;
+  left: 1rem;
+}
+
+.sufixicon {
+  position: absolute;
+  right: 1rem;
+}
+
+div.hero-btn-area > a {
+    min-width: 200px;
+}
