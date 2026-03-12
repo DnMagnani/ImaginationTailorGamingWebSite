@@ -17,7 +17,7 @@
 }
 
 .cardTag::before {
-    background-image: url(/img/AnimatedEmojis/fireEmoji.webp);
+    background-image: url(img/AnimatedEmojis/fireEmoji.webp);
     background-size: 1rem;
     background-position: 0 auto;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 }
 
 .cardTag.obojima::before {
-    background-image: url(/img/AnimatedEmojis/frogEmoji.webp);
+    background-image: url(img/AnimatedEmojis/frogEmoji.webp);
     content: "Obojima";
     line-height: 1;
     position: relative;
@@ -46,7 +46,7 @@
 }
 
 .cardTag.kidsgame::before {
-    background-image: url(/img/AnimatedEmojis/balloonEmoji.webp);
+    background-image: url(img/AnimatedEmojis/balloonEmoji.webp);
     content: "Kids";
     line-height: 1;
     position: relative;
@@ -58,7 +58,7 @@
 }
 
 .cardTag.adultgame::before {
-    background-image: url(/img/AnimatedEmojis/beerEmoji.webp);
+    background-image: url(img/AnimatedEmojis/beerEmoji.webp);
     content: "Grown-ups";
     line-height: 1;
     position: relative;
