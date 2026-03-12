@@ -1,117 +1,57 @@
-.btn {
-  background-color: #FFBB08;
-  color: #ffffff;
+/* Product Button*/ 
+
+.product-btnContainer {
+  margin-top: 2rem;
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0.8rem 2rem;
+.product-btnContainer button, .hero-btn-area a, .product-btnContainer button svg path, .hero-btn-area a svg path {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
   display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #7d41ce;
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-animated {
-  -webkit-animation: moveInBottom 0.5s ease-out;
-          animation: moveInBottom 0.5s ease-out;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-/* Prefixed Icon */
-
-.btn-prefixicon {
-  background-color: #FFBB08;
-  color: #ffffff;
-}
-
-.btn-prefixicon:link,
-.btn-prefixicon:visited {
-  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  margin-right: 1rem;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
   text-decoration: none;
-  padding: 0.8rem 2rem;
-  padding-left: 3rem;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  stroke: #3B3B3B;
 }
 
-.btn-prefixicon:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #7d41ce;
+.product-btnContainer button:disabled,.hero-btn-area a:disabled {
+ pointer-events: none;
 }
 
-.btn-prefixicon:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.product-btnContainer button:hover,.hero-btn-area a:hover, .product-btnContainer:hover button svg path, .hero-btn-area:hover a svg path {
+ color: #fff;
+   stroke: #fff;
+ background-color: #1A1A1A;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ transform: translateY(-2px);
 }
 
-.btn-prefixicon-animated {
-  -webkit-animation: moveInBottom 0.5s ease-out;
-          animation: moveInBottom 0.5s ease-out;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+.product-btnContainer button:active,.hero-btn-area a:active {
+ box-shadow: none;
+ transform: translateY(0);
 }
 
+.heroSection a:hover {
+   background-color: #7d41ce;
+   color: aliceblue;
+    border: 0.125em solid transparent;
 
-
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.hero-btn-area {
-    position: relative;
-    margin-right: 2rem;
-}
-
-.btn-prefixicon {
-  padding-left: 3em;
-}
-
-.prefixicon {
-  position: absolute;
-  left: 1rem;
-}
-
-.sufixicon {
-  position: absolute;
-  right: 1rem;
-}
-
-div.hero-btn-area > a {
-    min-width: 200px;
 }

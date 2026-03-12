@@ -9,6 +9,9 @@
 @import url(shopify_btn.css);
 @import url(btn.css);
 
+/* Campcard */
+@import url(campCard.css);
+
 .divvisualizer {
     border: 1px solid red;
 }
@@ -20,6 +23,7 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    background-color: #f2f2f2;
 }
 
 /*Header*/
@@ -31,8 +35,8 @@ header {
     background-color: #FFBB08;
     display: flex;
     position: absolute;
-    top: 0
-    ;
+    top: 0;
+    z-index: 1000;
 }
 
 .headercontainer {
@@ -43,6 +47,7 @@ header {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -92,13 +97,29 @@ nav a:hover {
 /* Hero Section Start */
 
 .heroSection {
+    padding-top: 100px;
     position: relative;
-    top: 100px;
     height: 500px;
-    background-color: #00A9F7;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow: hidden;
+    background-color: #0087ca;
+}
+
+
+
+.heroSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/04-002.wandering-line.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px) brightness(0.9);
 }
 
 .heroSection-Txtbox {
@@ -106,6 +127,7 @@ nav a:hover {
     flex-direction: column;
     flex: 1;
     padding: 3rem;
+    z-index: 1;
 }
 
 .heroSection-Img {
@@ -113,6 +135,8 @@ nav a:hover {
     flex: 1;
     padding: 2rem;
     justify-content: center;
+    position: relative;
+    min-height: 90%;
 }
 
 .heroSection-btn-container {
@@ -122,11 +146,215 @@ nav a:hover {
     align-items: center;
 }
 
+/* Event Galerry */
 
+.event_gallery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 16px;
+    scroll-behavior: smooth;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    z-index: 20;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: calc(100% + 150px);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.arrows button {
+    pointer-events: all;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.35);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 100ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.arrows button:hover {
+    transform: scale(1.1);
+    background: rgba(57, 57, 57, 0.1);
+}
+
+/* Product Show Case */
+
+.productsShowCase,.productInfo,.product,.productPhoto {
+    display: flex;
+    flex-direction: column;
+}
+
+.productsShowCase h1,h2{
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.productsShowCase h1 {
+    margin-top: 1em;
+}
+
+.productsShowCase .iconHolder svg path {
+    stroke: gray;
+}
+
+.product {
+    flex-direction: row;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.product.left {
+    flex-direction: row-reverse;   
+}
+
+.productInfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.productPhoto {
+    flex: 1;
+    display: flex;
+    height: 500px;
+    border-radius: 3rem;
+    background-color: transparent;
+    overflow: hidden;
+    transition: transform 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.productPhoto:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.productPhoto img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 5rem;
+    height: 300px;
+    background-color: #6e864a;
+    background-image: url("../img/MiddleGround.png");
+    background-size: cover;
+    background-position: center calc(100% - -120px);
+    background-repeat: no-repeat;
+    color: #fffbe8;
+    text-align: center;
+}
+
+
+.footerImg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footerLogo {
+    display: flex;
+    width: 150px;
+    transform: translateX(-10px);
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    font-family: meursault-variable, serif;
+    text-transform: uppercase;
+    font-variation-settings: "wdth" 100, "wght" 900;
+    margin-top: 2rem;
+}
+
+footer h4,h5,h3 {
+    margin: 0;
+}
+
+footer h5 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+}
 
 .container {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+}
+
+.iconHolder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(25%);
+    width: 1.5em;
 }
